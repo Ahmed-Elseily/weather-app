@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+
+<body>
+    <nav class="py-4">
+        <div class="container w-75 py-4 d-flex justify-content-between align-items-center">
+            <a href="#" class="d-flex align-items-center">
+                <img src="./cloud.png" alt="cloud">
+                <div class="text-white ms-3">
+                    <h1 class="fs-6 mb-1">Weather</h1>
+                    <p class="text-secondary mb-0">tagline goes here</p>
+                </div>
+            </a>
+            <div class="nav-btns">
+                <a id="home" class=" ms-2" href="#">Home</a>
+                <a class=" ms-2" href="#">News</a>
+                <a class=" ms-2" href="#">Live cameras</a>
+                <a class=" ms-2" href="#">Photos</a>
+                <a class=" ms-2" href="#">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- /* (((((((((((((((((((main section))))))))))))))))))) */ -->
+
+    <section class="main py-4">
+        <div class="container w-75 py-5">
+            <div class="main-input p-0 position-relative">
+                <input id="inputLocation" class="  rounded-5 border-bottom-0 border-end-0 p-3" type="text"
+                    placeholder="Find your location...">
+                <button class=" position-absolute text-white border-bottom-0 border-end-0 end-0 py-3 px-5">Find</button>
+            </div>
+            <div class="card-group py-5">
+                <div class="card border-0 overflow-hidden">
+                    <div class="card-header card-text bg-two">
+                        <div class="div d-flex justify-content-between">
+                            <p id="day" class="mb-0">Thursday</p>
+                            <div class="d-flex">
+                                <p id="dayNumber" class="mb-0"></p>
+                                <p id="mainMonth" class="mb-0"></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body bg-inner">
+                        <h5 id="locationName" class="card-title card-text">Cairo</h5>
+                        <p id="todayMaxTemp" class="card-text display-1 text-white py-3 fw-bold">35.1&deg;C</p>
+                        <p id="todayMinTemp" class="card-text"><i id="moon" class=" mb-2 ms-4 fa-2x fa-regular fa-moon"></i></p>
+                        <img id="todayConditionIcon"></img>
+                        <span id="todayCondition" class="mb-3">Clear</span>
+                        <div class="card-icons d-flex pt-3 py-2">
+                            <div class="div me-4">
+                                <i class=" fs-4 py-2 fa-solid fa-umbrella fa-rotate-right text-secondary"></i>
+                                20%
+                            </div>
+                            <div class="div me-4">
+                                <i class=" fs-4 py-2 fa-solid fa-wind text-secondary"></i>
+                                18Km/hr
+                            </div>
+                            <div class="div me-4">
+                                <i class=" fs-4 py-2 fa-regular fa-compass text-secondary"></i>
+                                East
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-0">
+                    <div class="card-header text-center bg-two-2">
+                        <div id="day1" class="card-text">Friday</div>
+                    </div>
+                    <div class="card-body bg-inner-2 text-center">
+                        <img id="conditionIcon1"></img>
+                        <p id="maxTemp" class=" mb-0 text-white fw-bold fs-3">45&deg;C</p>
+                        <p id="lowTemp" class=" fs-5 fw-bold card-text">29.4&deg;</p>
+                        <span id="condition">cloudy</span>
+
+
+                    </div>
+                </div>
+                <div class="card border-0">
+                    <div class="card-header text-center bg-two">
+                        <div id="day2" class="div card-text">Saturday</div>
+                    </div>
+                    <div class="card-body bg-inner text-center">
+                        <img id="conditionIcon2"></img>
+                        <p id="maxTemp1" class=" mb-0 text-white fw-bold fs-3">45&deg;C</p>
+                        <p id="lowTemp1" class=" fs-5 fw-bold card-text">29.4&deg;</p>
+                        <span id="condition1">cloudy</span>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- /* (((((((((((((((((((footer section))))))))))))))))))) */ -->
+
+    <section class="footer py-5">
+        <div class="container w-75 py-4">
+            <div class="row align-items-center">
+
+                <div class="main-input p-0 col-lg-8  position-relative">
+                    <input id="input-footer" class=" rounded-5 border-bottom-0 border-end-0 p-3" type="text"
+                        placeholder="Enter your Email to Subscribe">
+                    <button class=" position-absolute text-white border-bottom-0 border-end-0 end-0 p-3">Subscribe</button>
+                </div>
+                <div class="footer-icons d-flex align-items-center col-lg-4">
+                    <div role="button" class="me-2 fs-4 footer-social d-flex justify-content-center align-items-center">
+                        <i class="fa-brands fa-facebook-f"></i></div>
+                    <div role="button" class="me-2 fs-4 footer-social d-flex justify-content-center align-items-center">
+                        <i class="fa-brands fa-x-twitter"></i></div>
+                    <div role="button" class="me-2 fs-4 footer-social d-flex justify-content-center align-items-center">
+                        <i class="fa-brands fa-google-plus-g"></i></div>
+                    <div role="button" class="me-2 fs-4 footer-social d-flex justify-content-center align-items-center">
+                        <i class="fa-brands fa-instagram"></i></div>
+                </div>
+
+            </div>
+            <p class="card-text pt-3">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <script src="./JS/index.js"></script>
+</body>
+
+</html>
